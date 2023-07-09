@@ -1,28 +1,11 @@
 import React, { FC, useState } from "react";
-import { PostTypes } from "./types";
-import { postApi } from "./api/api";
-import header from "./components/header";
-const App: FC = () => {
-  const [posts, setPosts] = useState<null | PostTypes[]>(null);
+import Lab1 from "./components/Lab1";
 
-  const handelGetPosts = async () => {
-    const data: PostTypes[] = (await postApi.getPosts()).posts;
-    setPosts(data);
-  };
+const App: FC = () => {
   return (
     <>
-    <
-      <h1>There are my posts</h1>
-      <button onClick={handelGetPosts}>Get Posts</button>
-      {posts ? (
-        <ul>
-          {posts.map((post: PostTypes) => (
-            <>{JSON.stringify(post)}</>
-          ))}
-        </ul>
-      ) : (
-        "Dont have posts"
-      )}
+      <h1>This is React-TypeScript</h1>
+      <Lab1></Lab1>
     </>
   );
 };
