@@ -1,0 +1,8 @@
+.message-item{
+    padding: 5px;
+}
+.list-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

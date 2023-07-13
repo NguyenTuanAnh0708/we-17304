@@ -6,3 +6,10 @@ export interface PostTypes {
   tags: string[];
   reactions: number;
 }
+
+export interface Message {
+  name: string;
+  avatar: string;
+  timeSended: string;
+  messages: string;
+}
