@@ -8,6 +8,7 @@ const Lab3: React.FC = () => {
     return new Date().toLocaleDateString();
   };
   const messages: Message[] = [
+    
     {
       name: "Nguyễn Tuấn Anh",
       avatar:
